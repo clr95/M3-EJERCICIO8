@@ -1,0 +1,56 @@
+BODY{
+    background-color:grey;
+}
+@keyframes cat-animation {
+    0% {transform: translate(680px, 100%);}
+    25% {transform: translate(580px, 75%);}
+    50% {transform: translate(480px, 50%); }
+    75% {transform: translate(380px, 25%);}
+    100% {transform: translate(280px, 10%) scaleX(-1);}
+}
+
+
+@keyframes dog-animation {
+    0% {transform: translate(980px, 100%);}
+    25% {transform: translate(900px, 75%);}
+    50% {transform: translate(780px, 50%); }
+    75% {transform: translate(680px, 25%);}
+    100% {transform: translate(480px, 10%) scaleX(-1);}
+}
+
+.container{
+    background-color: rgb(29, 151, 15);
+    width: 90%;
+    height:20rem;
+    margin:5%;
+    padding:5%;
+    border-style:dashed;
+    border-color: black;
+}
+
+.dog {
+    width: 200px; 
+    height: 100px;
+    position: absolute;
+    transform: translate(16%, 26%);
+    animation-duration: 8s; 
+    animation-iteration-count: infinite; 
+    
+
+}
+
+.cat{
+    width: 200px; 
+    height: 100px;
+    position: absolute;
+    animation-duration: 8s; 
+    animation-iteration-count: infinite; 
+}
+
+.cat {
+    animation-name: cat-animation;
+}
+
+.dog {
+    animation-name: dog-animation;
+}
